@@ -1,0 +1,229 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+ul
+{
+    list-style: none;
+}
+
+.presupuesto-disponible
+{
+    height: 100px;
+    padding: 20px 0px;
+    font-size: 60px;
+}
+
+.fila
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:350px;
+    height: 50px;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.fila span
+{
+    width:50%;
+}
+
+.fila.fila-azul
+{
+    background-color:rgba(0, 255, 255, 0.849);
+}
+
+.fila.fila-roja
+{
+    background-color:rgba(216, 33, 33, 0.658);
+}
+
+.boton
+{
+    border: 2px solid rgb(63, 207, 63);
+    border-radius: 100%;
+    padding: 5px;
+    background-color: white;
+    color:rgb(63, 207, 63);
+    cursor: pointer;
+}
+.azul
+{
+    color: rgba(0, 255, 255, 0.849);
+}
+
+.rojo
+{
+    color:rgba(216, 33, 33, 0.849);
+}
+
+.input 
+{
+    background: white;
+    border: 1px solid #ccc;
+    width: 60px;
+    height: 35px;
+    margin-right:5px;
+    padding: 0px 8px;
+    border-radius: 5px;
+}
+
+header
+{
+    height: 45vh;
+    padding: 10px;
+    background: linear-gradient( to right,rgba(55, 0, 252, 0.418),#ccda0869),url("../Imagenes/fondo.png");
+    color: rgb(245, 237, 237);
+}
+
+header h1
+{
+    font-size: 25px;
+}
+
+header .container
+{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 100%;
+}
+
+header .container #presupuesto-disponible
+{
+    font-size: 43px;
+}
+
+#principal
+{
+    padding-top: 20px;
+}
+
+#principal .formulario
+{
+    display: flex;
+    justify-content: center;
+}
+
+#principal .formulario #texto
+{
+   width: 400px;
+}
+
+#principal .formulario #number
+{
+    width:100px;
+}
+
+#principal .formulario form .boton
+{
+    margin-left:10px;
+}
+
+#historial
+{
+    display: flex;
+    justify-content: center;
+    padding: 0px 15px;
+    width: 100%;
+    padding-top: 50px;
+}
+
+#historial .container-historial
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+#historial .container-historial ul
+{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 100%;
+}
+
+#historial .container-historial ul li
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height:50px;
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+}
+
+#historial .container-historial .ingreso p
+{
+    width:40%;
+}
+
+#historial .container-historial .egreso p
+{
+    width:40%;
+}
+
+#historial .container-historial .ingreso span
+{
+    display: inline-block;
+    margin: 0px;
+    width: 50%;
+    color:rgba(0, 255, 255, 0.849);
+}
+
+#historial .container-historial .egreso span
+{
+    display: inline-block;
+    margin: 0px;
+    width: 50%;
+    color:rgba(216, 33, 33, 0.849);
+}
+
+#historial .container-historial .ingreso li button
+{
+    display: none;
+    width: 20px;
+    height: 20px;
+    line-height: 8px;
+    border-radius: 50%;
+    color:rgba(0, 255, 255, 0.849);
+    border: 0.5px solid rgba(0, 255, 255, 0.849);
+    cursor: pointer;
+}
+
+#historial .container-historial .egreso li button
+{
+    display: none;
+    width: 20px;
+    height: 20px;
+    line-height: 8px;
+    border-radius: 50%;
+    color:rgba(216, 33, 33, 0.849);
+    border: 1px solid rgba(216, 33, 33, 0.849);
+    cursor: pointer;
+}
+
+#historial .container-historial .ingreso li:hover button
+{
+    display: inline;
+}
+
+#historial .container-historial .egreso li:hover button
+{
+    display: inline;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" type = "text/css" href = "css/normalize.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/estilos.css">
+        <script src="https://kit.fontawesome.com/d31c39d666.js" crossorigin="anonymous"></script>
+        <title>Presupuesto - Javascript</title>
+    </head>
+    <body>
+        <header id = "cabecera">
+            <div class = "container">
+                <h1>Presupuesto	Disponible:</h1>
+                <div class = "presupuesto-disponible">
+                    $0,00
+                </div>
+                <div class = "fila fila-azul">
+                    <p>INGRESOS</p> 
+                    <span id = "ingresos"></span>
+                </div>
+
+                <div class = "fila fila-roja">
+                    <p>EGRESOS</p> 
+                    <span id = "egresos"></span>
+                </div>
+            </div>
+        </header>
+
+        <main id = "principal">
+            <div class = "formulario">
+                <form>
+                    <select id = "select" class = "input">
+                        <option>+</option>
+                        <option>-</option>
+                    </select>
+                    <input id = "texto" class = "input" type = "text" placeholder="Descripcion" required>
+                    <input id = "number" class = "input" type = "number" placeholder="Valor" required>
+                </form>
+                <button id = "boton-check" class = "boton"><i class="fas fa-check"></i></button>
+            </div>
+
+            <section id = "historial">
+                <div class = "container-historial">
+                    <h3 class = "azul">INGRESOS</h3>
+                    <ul class = "ingreso">
+                        
+                    </ul>
+                </div>
+
+                <div class = "container-historial">
+                    <h3 class = "rojo">EGRESOS</h3>
+                    <ul class = "egreso">
+                    
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <script type = "text/javascript" src = "js/presupuesto.js"></script>
+    </body>
+</html>
